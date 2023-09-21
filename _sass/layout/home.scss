@@ -3,17 +3,13 @@
 */
 
 #post-list {
-  margin-top: 2rem;
+  // margin-top: 2rem;
 
   .card-wrapper {
     display: block;
 
     &:hover {
       text-decoration: none;
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 1.25rem;
     }
   }
 
@@ -46,6 +42,7 @@
 
         color: var(--heading-color) !important;
         font-size: 1.25rem;
+        font-weight: bold;
       }
 
       %muted {
@@ -91,7 +88,7 @@
 
 .pagination {
   color: var(--text-color);
-  font-family: Lato, sans-serif;
+  font-family: Orbitron, sans-serif;
   justify-content: space-evenly;
 
   a:hover {
@@ -181,10 +178,6 @@
 
 /* Sidebar is visible */
 @media all and (min-width: 831px) {
-  #post-list {
-    margin-top: 2.5rem;
-  }
-
   .pagination {
     font-size: 0.85rem;
     justify-content: center;

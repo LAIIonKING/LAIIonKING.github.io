@@ -20,7 +20,7 @@
     <h1 class="site-title">
       <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
     </h1>
-    <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
+    <!-- <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p> -->
   </header>
   <!-- .profile-wrapper -->
 
@@ -29,14 +29,14 @@
       <!-- home -->
       <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
         <a href="{{ '/' | relative_url }}" class="nav-link">
-          <i class="fa-fw fas fa-home"></i>
+          <!-- <i class="fa-fw fas fa-home"></i> -->
           <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
         </a>
       </li>
       <!-- categories -->
       <li class="nav-item{% if page.layout == 'categories' %}{{ " active" }}{% endif %}">
         <a href="{{ '/categories' | relative_url }}" class="nav-link">
-          <i class="fa-fw fas fa-stream"></i>
+          <!-- <i class="fa-fw fas fa-stream"></i> -->
           <span>{{ site.data.locales[include.lang].tabs.categories | upcase }}</span>
         </a>
       </li>
@@ -76,11 +76,11 @@
               id="{{ HEAD_PREFIX }}{{ group_index }}"
               class="category-head d-flex justify-content-between hide-border-bottom"
             >
-              <span class="ms-3">
-                <i class="far fa-folder{% if sub_categories_size > 0 %}-open{% endif %} fa-fw"></i>
+              <span>
+                <!-- <i class="far fa-folder{% if sub_categories_size > 0 %}-open{% endif %} fa-fw"></i> -->
       
                 {% capture _category_url %}/categories/{{ category_name | slugify | url_encode }}/{% endcapture %}
-                <a href="{{ _category_url | relative_url }}" class="mx-2">{{ category_name }}</a>
+                <a href="{{ _category_url | relative_url }}">{{ category_name }}</a>
       
                 <!-- content count -->
                 {% assign top_posts_size = site.categories[category_name] | size %}
@@ -121,17 +121,17 @@
       <!-- tags -->
       <li class="nav-item{% if page.layout == 'tags' %}{{ " active" }}{% endif %}">
         <a href="{{ '/tags' | relative_url }}" class="nav-link">
-          <i class="fa-fw fas fa-tags"></i>
+          <!-- <i class="fa-fw fas fa-tags"></i> -->
           <span>{{ site.data.locales[include.lang].tabs.tags | upcase }}</span>
         </a>
       </li>
       <!-- archives -->
-      <li class="nav-item{% if page.layout == 'archives' %}{{ " active" }}{% endif %}">
+      <!-- <li class="nav-item{% if page.layout == 'archives' %}{{ " active" }}{% endif %}">
         <a href="{{ '/archives' | relative_url }}" class="nav-link">
           <i class="fa-fw fas fa-archive"></i>
           <span>{{ site.data.locales[include.lang].tabs.archives | upcase }}</span>
         </a>
-      </li>
+      </li> -->
 
 
       </li>

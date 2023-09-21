@@ -32,13 +32,17 @@
     rgba(58, 55, 55, 0.4) 50%,
     rgba(255, 255, 255, 0) 100%
   );
+  --active-color: #6677b0;
+  --normal-color: #e8e8e8;
+  --light-color: #d2d2d2;
+  --tag-color: #586593;
 
   /* Sidebar */
   --site-title-color: #717070;
   --site-subtitle-color: #868686;
   --sidebar-bg: #1e1e1e;
   --sidebar-border-color: #292929;
-  --sidebar-muted-color: #868686;
+  --sidebar-muted-color: #e3e3e3;
   --sidebar-active-color: rgb(255, 255, 255, 0.95);
   --sidebar-hover-bg: #262626;
   --sidebar-btn-bg: #232328;
