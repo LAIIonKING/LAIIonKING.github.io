@@ -34,12 +34,12 @@
         </a>
       </li>
       <!-- categories -->
-      <li class="nav-item{% if page.layout == 'categories' %}{{ " active" }}{% endif %}">
+      <!-- <li class="nav-item{% if page.layout == 'categories' %}{{ " active" }}{% endif %}">
         <a href="{{ '/categories' | relative_url }}" class="nav-link">
-          <!-- <i class="fa-fw fas fa-stream"></i> -->
+          <i class="fa-fw fas fa-stream"></i>
           <span>{{ site.data.locales[include.lang].tabs.categories | upcase }}</span>
         </a>
-      </li>
+      </li> -->
 
       {% include lang.html %}
 

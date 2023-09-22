@@ -63,11 +63,28 @@ h1 + .post-meta {
   }
 }
 
+.post-header {
+  border-bottom: 1px solid var(--normal-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: center;
+  padding: 10px 2rem;
+  h1 {
+    font-weight: bold;
+    margin: 0px;
+    position: relative;
+    right: 20px;
+  }
+  span {
+    font-size: 12px;
+  }
+}
 .post-tail-wrapper {
   margin-top: 6rem;
   border-bottom: 1px double var(--main-border-color);
   font-size: 0.85rem;
-
+  padding: 0px 1rem;
   .post-tail-bottom a {
     color: inherit;
   }
